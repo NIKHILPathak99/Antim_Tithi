@@ -1,0 +1,28 @@
+:root {
+    --paper: #FAF6F0;
+    --paper-2: #F2EAE0;
+    --ink: #4a0370;
+    --ink-soft: #6e2b84;
+    --saffron: #D9784A;
+    --saffron-deep: #C15F35;
+    --maroon: #6B4E7A;
+    --sage: #4E6A78;
+    --line: #E1D5D9;
+    --gold-line: #D9A578;
+    --night: #211D42;
+    --night-2: #332B5C;
+    --coral-light: #F0B98A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--ink);
+}
+
+/* Navigation Bar */
