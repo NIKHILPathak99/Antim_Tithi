@@ -10,6 +10,9 @@
     <!-- ========   Custom Styles   ========= -->
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <!-- ========   FontAwsome Styles   ========= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -17,9 +20,11 @@
     <!-- ========   Navigation bar   ========= -->
     <nav>
         <div class="hero-icon-container">
-            <a class="hero-icon" href="./index.html">
+            <div class="hero-icon">
+                <a href="./index.html">
                 <img src="./Assets/icons/antimvidai.webp" alt="AntimTithi Logo" class="logo">
             </a>
+            </div>
             <div>
                 <h3><a href="./index.html">AntimVidai</a></h3>
                 <p>Guiding Every Final Farewell</p>
@@ -27,9 +32,9 @@
         </div>
 
 
-        <div>
+        <div class="nav">
             <div class="nav-links">
-                <a href="./about.html">About</a>
+                <a class="active" href="./about.html">About</a>
                 <a href="./about.html">Rituals</a>
                 <a href="./services.html">Services</a>
                 <a href="./contact.html">About & Trust</a>
@@ -37,12 +42,206 @@
             </div>
 
             <div class="nav-contact">
-                <a href="tel:9651488774">9651488774</a>
+                <a class="active" href="tel:9651488774"><i class="fa-solid fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ========   Header   ========= -->
+     <header>
+
+        <div class="header-text">
+
+            <p class="subtitle">HINDU FUNERAL & SHRADDHA GUIDANCE . DELHI NCR . 24/7 AVAILABLE</p>
+            <h1>Honoring Every Soul's Final Journey with Sacred Rituals and Spiritual Guidance</h1>
+            <p>Antim Sanskar has thirteen days of rites, each with its own timing, materials, and meaning. Antimtithi arranges every one of them — the pandit, the crematorium slot, the samagri, the paperwork — and stays on the line until the Tehravin is done, so your family can focus on each other instead of logistics.</p>
+
+            <div class="link-btn">
+                <a class="active" href="">See the 13-day path </a>
+                <a href="tel:9651488774">Call the helpline now</a>
+            </div>
+
+        </div>
+
+        <div class="header-image">
+            <img src="./Assets/images/diya-image-lg.webp" alt="diya_image">
+        </div>
+
+     </header>
+
+      <!-- ========   The 13 Day   ========= -->
+     <section class="active">
+
+        <h2>The 13 Day Samskara</h2>
+
+        <div class="card">
+            <div class="text-right">
+                <span>01</span>
+                <h3>Antim Sanskar</h3>
+                <p>The final cremation rites at the holy ghats, ensuring the physical body returns to the five elements with Vedic chants.</p>
+                <div class="point"></div>
+            </div>
+            <div class="card-image">
+                <img src="./Assets/images/ritual-diya.webp" alt="ritual_diya" title="ritual_diya">
+            </div>
+        </div>
+
+         <div class="card">
+             <div class="card-image right">
+                <img src="./Assets/images/ritual-pind.webp" alt="ritual_pind" title="ritual_pind">
+            </div>
+
+            <div class="text-left">
+                <span>10</span>
+                <h3>Pind Daan</h3>
+                <p>Offering of rice balls to the departed soul, facilitating the transition from Preta to Pitru through sacred rituals.</p>
+                <div class="point"></div>
+            </div>
+           
+        </div>
+
+         <div class="card">
+            <div class="text-right">
+                <span>13</span>
+                <h3>Shanti Path</h3>
+                <p>The conclusion of the mourning period with a community feast and prayers for the lasting peace of the soul.</p>
+                <div class="point"></div>
+            </div>
+            <div class="card-image">
+                <img src="./Assets/images/ritual-courtyard.webp" alt="ritual_courtyard" title="ritual_courtyard">
             </div>
         </div>
 
 
-    </nav>
+        <p class="read_more"><a href="/">Read the full day-by-day guide →</a></p>
+
+     </section>
+
+     <!-- ========   Banner   ========= -->
+      <div class="banner-container">
+
+        <div class="advertise">
+            <div class="add-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="add-content">
+                <h4>If a death has just occurred, call us first.</h4>
+                <p>We'll walk you through the next hour on the phone — what to ask the hospital for, whether the cremation can happen today, and who in the family needs to be consulted before anything is booked. No package, no commitment, just help.</p>
+            </div>
+
+            <div class="add-contact">
+                <a href="tel:9651488774">Call 9023XXXXXXXX</a>
+            </div>
+        </div>
+
+
+        <div class="banner">
+            <h3>When the days call for a journey to the river,<br/> we arrange that too.</h3>
+        </div>
+
+      </div>
+
+       <!-- ========   Services   ========= -->
+      <section class="service active">
+        <p class="subtitle">What we take off your hands</p>
+        <h3>One call, and each piece is arranged</h3>
+        <p>Every service can be booked on its own, or together as a full antim sanskar package. <a href="./index.html">See all services →</a> </p> 
+
+
+        <div class="services-container">
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-regular fa-truck"></i></div>
+                <h3>Transport & hearse</h3>
+                <p>A dignified, climate-controlled vehicle, dispatched anywhere in Delhi NCR, day or night.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-regular fa-user"></i></div>
+                <h3>Pandit & rituals</h3>
+                <p>A Vedic priest for the antyeshti and every rite through the Tehravin.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-regular fa-file-lines"></i></div>
+                <h3>Samagri kits</h3>
+                <p>Every item the rites call for, assembled in advance.</p>
+            </div>
+
+        </div>
+      </section>
+
+      <!-- ========   Quotes   ========= -->
+      <section class="quote-container">
+        <div class="quote">
+            <q>As a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies, giving up the old and useless ones.</q>
+            <span>- Bhagavad Gita 2.22</span>
+        </div>
+
+        <div class="available">
+
+            <div>
+                <span>24/7</span>
+                <p>Coordinators on call across Delhi NCR</p>
+            </div>
+
+            <div>
+                <span>40+ min</span>
+                <p>Average dispatch time for the hearse</p>
+            </div>
+
+            <div>
+                <span>All rites</span>
+                <p>Antyeshti to Tehravin, one point of contact</p>
+            </div>
+
+        </div>
+      </section>
+
+
+       <!-- ========   Footer   ========= -->
+       <footer>
+
+        <div>
+            <h1>AntimVidai</h1>
+            <p>Guidance, pandits and samagri for Hindu after-death rituals, performed exactly as the shastras prescribe.</p>
+        </div>
+
+        <div>
+            <h4>Rituals</h4>
+            <p>13-Day Journey</p>
+            <p>Asthi Visarjan</p>
+            <p>Pind Daan</p>
+            <p>Pitru Tarpan</p>
+        </div>
+
+
+        <div>
+            <h4>Company</h4>
+            <p>About Us</p>
+            <p>Samagri Kits</p>
+            <p>FAQ</p>
+            <p>Pitru Tarpan</p>
+        </div>
+
+
+        <div>
+            <h4>Helpline</h4>
+            <div>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+            <p>Available 24 hours, all days including festivals.</p>
+        </div>
+
+       </footer>
+
+
+
+
+     <!-- ========   FontAwsome JS   ========= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/js/all.min.js" integrity="sha512-BivWm1+PupfLofQ5Ei/fNEC6Oq6IZiGO9WUm2ibWHZ33cj/qTX4zsBW/0SN9Myo4HEmINmr0wjuQE8eDL3rmng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
