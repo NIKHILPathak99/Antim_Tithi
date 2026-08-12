@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntimTithi: Guiding Every Final Farewell</title>
+    <link rel="shortcut icon" href="./Assets/icons/antimvidai.webp" type="image/x-icon">
+
+    <!-- ========   Custom Styles   ========= -->
+     <link rel="stylesheet" href="./CSS/common.css">
+     <link rel="stylesheet" href="./CSS/contact.css">
+
+    <!-- ========   FontAwsome Styles   ========= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- ========   Navigation bar   ========= -->
+    <nav>
+        <div class="hero-icon-container">
+            <div class="hero-icon">
+                <a href="./index.html">
+                <img src="./Assets/icons/antimvidai.webp" alt="AntimTithi Logo" class="logo">
+            </a>
+            </div>
+            <div>
+                <h3><a href="./index.html">AntimVidai</a></h3>
+                <p>Guiding Every Final Farewell</p>
+            </div>
+        </div>
+
+
+        <div class="nav">
+            <div class="nav-links">
+                <a href="./index.html">About</a>
+                <a href="./ritual.html">Rituals</a>
+                <a href="./services.html">Services</a>
+                <a href="./about.html">About & Trust</a>
+                <a class="active" href="./contact.html">Contact</a>
+            </div>
+
+            <div class="nav-contact">
+                <a class="active" href="tel:9651488774"><i class="fa-solid fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ========   Header   ========= -->
+    <header>
+
+        <div class="header-text">
+
+            <p class="subtitle">We're on call, day or night</p>
+             <h1>Reach a coordinator now</h1>
+             <p>If you need help right now, please call rather than use the form below — the phone line is answered immediately, any hour. The form is best for planning ahead, general questions, or setting up a tithi reminder, where a same-day callback is fine.</p>
+
+        </div>
+
+     </header>
+
+    <!-- ========   Contact   ========= -->
+     <section>
+  <div class="wrap contact-grid">
+
+    <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-note').style.display='block'; this.reset();">
+      <div class="field-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field-group">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="field-group">
+        <label for="need">What do you need?</label>
+        <select id="need" name="need">
+          <option>Immediate assistance — a passing has occurred</option>
+          <option>Planning ahead for a family member</option>
+          <option>Set up a tithi / shraddha reminder</option>
+          <option>General question</option>
+        </select>
+      </div>
+      <div class="field-group">
+        <label for="message">Details (optional)</label>
+        <textarea id="message" name="message" placeholder="Anything that would help us respond well — location, timing, or specific rites you need arranged."></textarea>
+      </div>
+      <button type="submit" class="btn primary">Send &amp; request a callback</button>
+      <p id="form-note" style="display:none; margin-top:14px; font-size:0.9rem; color:var(--ink-soft);">This is a design preview — the form isn't connected yet. In production this submits to your coordination team with an SMS confirmation to the sender.</p>
+    </form>
+
+    <div>
+      <div class="photo-frame" style="aspect-ratio:16/7; margin-bottom:24px;">
+        <img src="https://cdn.pixabay.com/photo/2020/05/21/20/40/diya-5202661_1280.jpg" alt="A lit diya, oil lamp" loading="lazy">
+      </div>
+      <div class="contact-info-card">
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.98.36 1.94.68 2.87a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.21-1.21a2 2 0 0 1 2.11-.45c.93.32 1.89.55 2.87.68A2 2 0 0 1 22 16.92Z"/></svg>
+          <div><div class="k">24-hour helpline</div><div class="v">+91 11-4789-1234</div></div>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+          <div><div class="k">Email</div><div class="v">help@antimtithi.in</div></div>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><div class="k">Coordination office</div><div class="v">Lajpat Nagar, New Delhi</div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;">
+        <span class="eyebrow">Areas we cover</span>
+        <div class="area-tags">
+          <span>South Delhi</span><span>Central Delhi</span><span>West Delhi</span><span>East Delhi</span>
+          <span>Noida</span><span>Gurugram</span><span>Ghaziabad</span><span>Faridabad</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+    <!-- ========   Footer   ========= -->
+    <footer>
+    
+    </footer>
+    
+    
+    
+    
+    <!-- ========   FontAwsome JS   ========= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/js/all.min.js"
+        integrity="sha512-BivWm1+PupfLofQ5Ei/fNEC6Oq6IZiGO9WUm2ibWHZ33cj/qTX4zsBW/0SN9Myo4HEmINmr0wjuQE8eDL3rmng=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./JS/commonjs.js"></script>
+    
+    </body>
+    
+    </html>

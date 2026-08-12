@@ -174,6 +174,36 @@ section h2{
     color: var(--text);
 }
 
+
+/* Banner */
+.banner{
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Contact add */
+.whatsapp{
+    background-color: #25D366;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+    transform: rotate(45deg);
+    
+}
+.whatsapp>a{
+    color: white;
+    transform: rotate(-30deg);
+}
+
 /* Footer */
 
 footer{
