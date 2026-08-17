@@ -1,19 +1,32 @@
-/* ================= CONTACT SECTION ================= */
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
 
-section{
+section {
     padding-inline: 80px;
 }
+
 .contact-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
     gap: 70px;
+
     align-items: start;
 }
 
-/* ---------- Contact Form ---------- */
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
 
 .contact-form {
     width: 100%;
+    min-width: 0;
 }
 
 .contact-form .field-group {
@@ -22,10 +35,15 @@ section{
 
 .contact-form .field-group label {
     display: block;
+
     margin-bottom: 8px;
+
     font-size: 0.82rem;
+
     letter-spacing: 0.06em;
+
     text-transform: uppercase;
+
     color: var(--ink-soft);
 }
 
@@ -33,21 +51,28 @@ section{
 .contact-form .field-group select,
 .contact-form .field-group textarea {
     display: block;
+
     width: 100%;
     max-width: 100%;
+
     box-sizing: border-box;
 
     background: var(--paper-2);
+
     border: 1px solid var(--line);
+
     color: var(--ink);
 
     padding: 13px 14px;
 
-    font-family: 'Karla', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+
     font-size: 0.98rem;
+
     line-height: 1.4;
 
-    border-radius: 2px;
+    border-radius: 4px;
+
     outline: none;
 
     transition:
@@ -55,66 +80,134 @@ section{
         box-shadow 0.2s ease;
 }
 
-button{
-     border: 1px solid var(--night-2);
-    padding: 10px 15px;
-     background-color: var(--night-2);
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.contact-form button,
+.contact-form .btn {
+    border: 1px solid var(--night-2);
+
+    padding: 12px 18px;
+
+    background-color: var(--night-2);
+
     color: var(--coral-light);
+
+    cursor: pointer;
+
+    font-family: "Noto Sans", sans-serif;
+
+    font-size: 14px;
+
+    border-radius: 4px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
 
-/* Select */
+.contact-form button:hover,
+.contact-form .btn:hover {
+    background-color: var(--night);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
 .contact-form .field-group select {
     cursor: pointer;
+
     appearance: auto;
 }
 
-/* Textarea */
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
 .contact-form .field-group textarea {
     min-height: 130px;
+
     resize: vertical;
 }
 
-/* Placeholder */
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
 .contact-form .field-group input::placeholder,
 .contact-form .field-group textarea::placeholder {
     color: var(--ink-soft);
+
     opacity: 0.7;
 }
 
-/* Focus */
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
 .contact-form .field-group input:focus,
 .contact-form .field-group select:focus,
 .contact-form .field-group textarea:focus {
     border-color: var(--saffron-deep);
-    box-shadow: 0 0 0 2px rgba(193, 95, 53, 0.10);
+
+    box-shadow:
+        0 0 0 2px rgba(193, 95, 53, 0.10);
 }
 
-/* Submit button */
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
 .contact-form .btn {
     margin-top: 4px;
 }
 
-/* ---------- Right Side ---------- */
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
 
 .contact-grid > div:last-child {
     width: 100%;
+
+    min-width: 0;
 }
 
-/* Contact image */
+
+/* =========================================================
+   CONTACT IMAGE
+   ========================================================= */
+
 .contact-grid .photo-frame {
     width: 100%;
+
     aspect-ratio: 16 / 7;
+
     margin-bottom: 24px;
+
     overflow: hidden;
 
-    border-radius: 3px;
+    border-radius: 5px;
+
     border: 1px solid var(--line);
 }
 
 .contact-grid .photo-frame img {
     display: block;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 
     filter:
@@ -124,20 +217,28 @@ button{
         contrast(1.02);
 }
 
-/* ---------- Contact Information Card ---------- */
+
+/* =========================================================
+   CONTACT INFORMATION CARD
+   ========================================================= */
 
 .contact-info-card {
     width: 100%;
 
     background: var(--paper-2);
+
     border: 1px solid var(--line);
 
     padding: 34px;
+
+    box-sizing: border-box;
 }
 
 .contact-info-card .row {
     display: flex;
+
     align-items: flex-start;
+
     gap: 14px;
 
     padding: 16px 0;
@@ -151,6 +252,7 @@ button{
 
 .contact-info-card .row:last-child {
     padding-bottom: 0;
+
     border-bottom: none;
 }
 
@@ -161,6 +263,7 @@ button{
     color: var(--saffron-deep);
 
     flex: 0 0 20px;
+
     margin-top: 2px;
 }
 
@@ -170,23 +273,36 @@ button{
 
 .contact-info-card .row .k {
     font-size: 0.78rem;
+
     letter-spacing: 0.08em;
+
     text-transform: uppercase;
+
     color: var(--ink-soft);
 }
 
 .contact-info-card .row .v {
     font-size: 1rem;
+
     line-height: 1.45;
+
     margin-top: 4px;
+
     color: var(--ink);
+
+    overflow-wrap: anywhere;
 }
 
-/* ---------- Areas ---------- */
+
+/* =========================================================
+   AREAS
+   ========================================================= */
 
 .area-tags {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 8px;
 
     margin-top: 16px;
@@ -196,74 +312,243 @@ button{
     display: inline-block;
 
     font-size: 0.82rem;
+
     line-height: 1.2;
 
     padding: 7px 12px;
 
     background: var(--paper);
+
     border: 1px solid var(--line);
+
     border-radius: 20px;
 
     color: var(--ink-soft);
 }
 
-/* ---------- Tablet ---------- */
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    section {
+        padding-inline: 50px;
+    }
+
+    .contact-grid {
+        gap: 45px;
+    }
+
+    .contact-info-card {
+        padding: 28px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
 
 @media (max-width: 900px) {
 
+    section {
+        padding-inline: 35px;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 44px;
+
+        gap: 50px;
+
+        max-width: 700px;
+    }
+
+    .contact-form {
+        width: 100%;
     }
 
     .contact-grid .photo-frame {
         aspect-ratio: 16 / 8;
     }
+
+    .contact-info-card {
+        padding: 30px;
+    }
 }
 
 
-/* ---------- Mobile ---------- */
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
+
+    section {
+        padding-inline: 20px;
+    }
 
     .contact-grid {
-        gap: 36px;
+        width: 100%;
+
+        gap: 35px;
     }
+
+
+    /* ---------- Form ---------- */
 
     .contact-form .field-group {
         margin-bottom: 18px;
     }
 
+    .contact-form .field-group label {
+        font-size: 0.75rem;
+
+        margin-bottom: 7px;
+    }
+
     .contact-form .field-group input,
     .contact-form .field-group select,
     .contact-form .field-group textarea {
-        font-size: 0.95rem;
+        width: 100%;
+
+        font-size: 0.94rem;
+
         padding: 12px;
     }
 
-    .contact-grid .photo-frame {
-        aspect-ratio: 16 / 9;
-        margin-bottom: 20px;
+    .contact-form .field-group textarea {
+        min-height: 120px;
     }
 
+
+    /* ---------- Button ---------- */
+
+    .contact-form button,
+    .contact-form .btn {
+        width: 100%;
+
+        padding: 13px 15px;
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- Image ---------- */
+
+    .contact-grid .photo-frame {
+        aspect-ratio: 16 / 9;
+
+        margin-bottom: 20px;
+
+        border-radius: 5px;
+    }
+
+
+    /* ---------- Info Card ---------- */
+
     .contact-info-card {
-        padding: 24px 20px;
+        padding: 23px 18px;
     }
 
     .contact-info-card .row {
-        gap: 12px;
+        gap: 11px;
+
+        padding: 14px 0;
+    }
+
+    .contact-info-card .row svg {
+        width: 18px;
+        height: 18px;
+
+        flex-basis: 18px;
+    }
+
+    .contact-info-card .row .k {
+        font-size: 0.7rem;
     }
 
     .contact-info-card .row .v {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+
+        line-height: 1.4;
     }
+
+
+    /* ---------- Areas ---------- */
 
     .area-tags {
         gap: 7px;
+
+        margin-top: 13px;
     }
 
     .area-tags span {
-        font-size: 0.78rem;
+        font-size: 0.75rem;
+
         padding: 6px 10px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    section {
+        padding-inline: 15px;
+    }
+
+    .contact-grid {
+        gap: 30px;
+    }
+
+
+    /* Form */
+
+    .contact-form .field-group input,
+    .contact-form .field-group select,
+    .contact-form .field-group textarea {
+        padding: 11px;
+
+        font-size: 0.9rem;
+    }
+
+    .contact-form .field-group textarea {
+        min-height: 110px;
+    }
+
+
+    /* Image */
+
+    .contact-grid .photo-frame {
+        aspect-ratio: 4 / 3;
+    }
+
+
+    /* Info */
+
+    .contact-info-card {
+        padding: 20px 15px;
+    }
+
+    .contact-info-card .row {
+        gap: 9px;
+    }
+
+    .contact-info-card .row .v {
+        font-size: 0.86rem;
+    }
+
+
+    /* Areas */
+
+    .area-tags span {
+        font-size: 0.7rem;
+
+        padding: 5px 8px;
     }
 }

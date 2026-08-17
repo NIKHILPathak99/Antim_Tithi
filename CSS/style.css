@@ -1,12 +1,17 @@
-/* Section */
+/* =========================================================
+   13 DAY SECTION
+   ========================================================= */
 
-.card{
+.card {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-.card span{
+
+.card span {
+    display: block;
     color: #D9A578;
     font-size: 25px;
     font-style: italic;
@@ -14,232 +19,744 @@
     font-weight: 600;
     opacity: 0.7;
 }
-.card h3{
+
+.card h3 {
     color: var(--night);
     margin-bottom: 10px;
 }
-.card p{
+
+.card p {
     color: var(--saffron-deep);
     margin-bottom: 10px;
+    line-height: 24px;
 }
-.text-right{
+
+.text-right {
     text-align: right;
     flex: 0 0 40%;
     max-width: 40%;
     padding: 100px 40px;
     border-right: 1px solid var(--line);
     position: relative;
-    
+    box-sizing: border-box;
 }
-.text-right .point{
+
+.text-right .point {
     width: 20px;
     height: 20px;
     border: 2px solid var(--saffron-deep);
     border-radius: 50%;
     position: absolute;
     top: 45%;
-    right: -2%;
+    right: -11px;
     background-color: var(--dark-bg);
+    box-sizing: border-box;
 }
-.text-left{
+
+.text-left {
     text-align: left;
     flex: 0 0 40%;
     max-width: 40%;
     padding: 50px;
     position: relative;
+    box-sizing: border-box;
 }
-.text-left .point{
+
+.text-left .point {
     width: 20px;
     height: 20px;
     border: 2px solid var(--saffron-deep);
     border-radius: 50%;
     position: absolute;
     top: 45%;
-    left: -1.5%;
+    left: -11px;
     background-color: var(--dark-bg);
+    box-sizing: border-box;
 }
-.card-image{
-    float: 0 0 40%;
+
+.card-image {
+    flex: 0 0 40%;
     max-width: 40%;
     padding: 50px;
     border-left: 1px solid var(--line);
+    box-sizing: border-box;
 }
-.card-image.right{
+
+.card-image.right {
     border-right: 1px solid var(--line);
-    border-left:none;
+    border-left: none;
 }
-.card-image img{
+
+.card-image img {
+    display: block;
     width: 100%;
     height: 100%;
+    max-height: 350px;
     object-fit: cover;
+    border-radius: 5px;
 }
-.read_more{
+
+.read_more {
     width: 100%;
     text-align: center;
     margin-top: 40px;
     font-size: 14px;
     font-weight: 500;
 }
-.read_more a{
+
+.read_more a {
     color: var(--text);
 }
 
 
-/* Advertisement */
-.advertise{
+/* =========================================================
+   ADVERTISEMENT
+   ========================================================= */
+
+.advertise {
     background-color: var(--night-2);
     width: 70%;
+    max-width: 1200px;
     border-radius: 0 0 20px 20px;
     margin: auto;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+
     gap: 30px;
     padding: 30px;
     color: var(--gold-line);
+
+    box-sizing: border-box;
 }
-.advertise>div{
+
+.advertise > div {
     padding: 10px;
 }
-.add-icon{
+
+.add-icon {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 50%;
     background-color: var(--ink-soft);
     font-size: 20px;
 }
-.add-contact{
-     background-color: var(--coral-light);
-     border-radius: 10px;
-     
+
+.add-contact {
+    flex-shrink: 0;
+    background-color: var(--coral-light);
+    border-radius: 10px;
 }
-.add-contact>a{
+
+.add-contact > a {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding: 10px 15px;
+    color: var(--night);
+    white-space: nowrap;
 }
-.add-content{
-    flex: 0 0 65%;
+
+.add-content {
+    flex: 1 1 auto;
     max-width: 65%;
 }
 
-.add-content h4{
+.add-content h4 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.banner{
+.add-content p {
+    line-height: 22px;
+}
+
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.banner {
     height: 300px;
-    background-image: linear-gradient(rgba(12, 12, 12, 0.458), rgba(6, 6, 6, 0.561)),url("../Assets/images/banner-2.webp");
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(12, 12, 12, 0.458),
+            rgba(6, 6, 6, 0.561)
+        ),
+        url("../Assets/images/banner-2.webp");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     margin-top: 50px;
     position: relative;
 }
-.banner>h3{
+
+.banner > h3 {
     position: absolute;
     bottom: 40px;
     left: 40px;
+    right: 40px;
+
     font-size: 30px;
+    line-height: 1.3;
+
     color: wheat;
 }
 
-.service{
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.service {
     padding-inline: 180px;
 }
-section .subtitle{
+
+section .subtitle {
     font-size: 15px;
     color: var(--text);
 }
 
-section>h3{
+section > h3 {
     font-size: 25px;
     width: 300px;
+    max-width: 100%;
+
     color: var(--night-2);
     margin-bottom: 10px;
 }
-section>p{
+
+section > p {
     font-size: 16px;
     width: 600px;
+    max-width: 100%;
+
     margin-bottom: 30px;
-    line-height: 24px
+    line-height: 24px;
 }
-section>p>a{
+
+section > p > a {
     color: var(--text);
     font-size: 18px;
     text-decoration: underline;
 }
 
-.services-container{
+.services-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0;
 }
-.service-card{
+
+.service-card {
     padding: 30px;
     border: 1px solid var(--line);
-    flex: 0 0 420px;
+
+    flex: 1 1 300px;
     max-width: 420px;
+
+    box-sizing: border-box;
 }
-.service-card .service-icon{
+
+.service-card .service-icon {
     font-size: 26px;
     color: var(--text);
     margin-bottom: 20px;
 }
 
-.service-card h3{
+.service-card h3 {
     color: var(--night);
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.service-card p{
+.service-card p {
     color: var(--night-2);
     font-size: 16px;
+    line-height: 24px;
 }
 
 
-/* Quotes */
+/* =========================================================
+   QUOTES
+   ========================================================= */
 
-.quote-container{
+.quote-container {
     display: flex;
     flex-direction: row;
     gap: 100px;
+
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.quote{
-    flex: 0 0 600px;
+.quote {
+    flex: 0 1 600px;
     max-width: 600px;
 }
-.quote>q{
+
+.quote > q {
     font-style: italic;
     font-size: 22px;
+    line-height: 32px;
+
     color: var(--night-2);
     font-weight: 300;
-    
 }
-.quote>span{
+
+.quote > span {
     display: block;
     font-weight: 600;
     color: var(--text);
     margin-top: 10px;
 }
 
-.quote-container .available>div{
+.quote-container .available {
+    flex: 0 1 300px;
+}
+
+.quote-container .available > div {
     margin-bottom: 25px;
+
     border-left: 3px solid var(--saffron-deep);
     padding: 10px;
 }
 
-.quote-container .available>div>span{
+.quote-container .available > div > span {
     font-size: 30px;
     font-family: "Fraunces", serif;
     color: var(--night);
 }
 
-.quote-container .available>div>p{
+.quote-container .available > div > p {
     font-size: 14px;
+    line-height: 21px;
     color: var(--night-2);
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .service {
+        padding-inline: 100px;
+    }
+
+    .advertise {
+        width: 85%;
+    }
+
+    .quote-container {
+        gap: 50px;
+    }
+
+    .quote {
+        max-width: 500px;
+    }
+
+    .text-right,
+    .text-left,
+    .card-image {
+        padding: 40px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* 13 Day */
+
+    .text-right,
+    .text-left,
+    .card-image {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+
+    .text-right {
+        padding: 60px 25px;
+    }
+
+    .text-left {
+        padding: 60px 25px;
+    }
+
+    .card-image {
+        padding: 30px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    /* Advertisement */
+
+    .advertise {
+        width: 90%;
+        gap: 15px;
+        padding: 25px;
+    }
+
+    .add-content {
+        max-width: none;
+    }
+
+    .add-content h4 {
+        font-size: 17px;
+    }
+
+    .add-content p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    /* Services */
+
+    .service {
+        padding-inline: 50px;
+    }
+
+    .service-card {
+        flex: 1 1 300px;
+        max-width: 50%;
+    }
+
+
+    /* Quote */
+
+    .quote-container {
+        gap: 40px;
+    }
+
+    .quote {
+        flex: 1 1 55%;
+        max-width: 55%;
+    }
+
+    .quote > q {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .quote-container .available {
+        flex: 1 1 35%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================================
+       13 DAY CARDS
+       ===================================================== */
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-right,
+    .text-left,
+    .card-image {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text-right,
+    .text-left {
+        text-align: center;
+        padding: 35px 20px;
+        border: none;
+    }
+
+    .text-right {
+        border-bottom: 1px solid var(--line);
+    }
+
+    .text-left {
+        border-top: 1px solid var(--line);
+    }
+
+    /*
+       Timeline points are hidden on mobile because
+       the vertical timeline doesn't make sense with
+       the desktop positioning.
+    */
+
+    .text-right .point,
+    .text-left .point {
+        display: none;
+    }
+
+
+    /* Images */
+
+    .card-image,
+    .card-image.right {
+        padding: 20px 0;
+        border: none;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        border-radius: 12px;
+    }
+
+    .card span {
+        font-size: 22px;
+    }
+
+    .card h3 {
+        font-size: 23px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    /* =====================================================
+       ADVERTISEMENT
+       ===================================================== */
+
+    .advertise {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+
+        flex-direction: column;
+        text-align: center;
+
+        gap: 15px;
+        padding: 25px 20px;
+    }
+
+    .advertise > div {
+        padding: 5px;
+    }
+
+    .add-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .add-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .add-content h4 {
+        font-size: 17px;
+    }
+
+    .add-content p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .add-contact {
+        width: 100%;
+    }
+
+    .add-contact > a {
+        justify-content: center;
+        white-space: normal;
+    }
+
+
+    /* =====================================================
+       BANNER
+       ===================================================== */
+
+    .banner {
+        height: 280px;
+        margin-top: 30px;
+    }
+
+    .banner > h3 {
+        left: 20px;
+        right: 20px;
+        bottom: 25px;
+
+        font-size: 24px;
+        line-height: 1.35;
+    }
+
+
+    /* =====================================================
+       SERVICES
+       ===================================================== */
+
+    .service {
+        padding-inline: 20px;
+    }
+
+    section .subtitle {
+        font-size: 13px;
+    }
+
+    section > h3 {
+        width: 100%;
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    section > p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service-card {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .service-card h3 {
+        font-size: 19px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    /* =====================================================
+       QUOTE
+       ===================================================== */
+
+    .quote-container {
+        flex-direction: column;
+        gap: 40px;
+
+        padding-inline: 20px;
+        text-align: center;
+    }
+
+    .quote {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .quote > q {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .quote > span {
+        font-size: 14px;
+    }
+
+    .quote-container .available {
+        width: 100%;
+        max-width: 450px;
+        text-align: left;
+    }
+
+    .quote-container .available > div {
+        margin-bottom: 20px;
+    }
+
+    .quote-container .available > div > span {
+        font-size: 26px;
+    }
+
+    .quote-container .available > div > p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .text-right,
+    .text-left {
+        padding: 30px 15px;
+    }
+
+    .card h3 {
+        font-size: 21px;
+    }
+
+    .card p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .banner > h3 {
+        font-size: 21px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .service {
+        padding-inline: 15px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .quote-container {
+        padding-inline: 15px;
+    }
+
+    .quote > q {
+        font-size: 17px;
+        line-height: 26px;
+    }
 }

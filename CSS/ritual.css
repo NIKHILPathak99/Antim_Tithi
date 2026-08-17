@@ -1,101 +1,523 @@
+/* =========================================================
+   IMAGE CARDS
+   ========================================================= */
 
-
-/*  Image Card  */
-
-.image-card-container{
+.image-card-container {
     display: flex;
     flex-direction: row;
+
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
     gap: 20px;
+
     flex-wrap: wrap;
+
+    width: 100%;
 }
 
-.card{
-    flex:0 0 450px;
+.image-card-container .card {
+    flex: 0 1 450px;
     max-width: 450px;
 
+    min-width: 0;
 }
-.card-image{
+
+.image-card-container .card-image {
     width: 100%;
-    border-radius: 5px;
+    height: 300px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
 }
-.card-image>img{
+
+.image-card-container .card-image > img {
+    display: block;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-    border-radius: 5px;
-}
-.card p{
-     color: var(--saffron-deep);
-     font-size: 12px;
-     margin-top: 5px;
+
+    border-radius: 8px;
 }
 
-/*  Rituals  */
+.image-card-container .card p {
+    color: var(--saffron-deep);
 
-.rituals{
+    font-size: 12px;
+
+    margin-top: 7px;
+
+    line-height: 18px;
+}
+
+
+/* =========================================================
+   RITUAL TIMELINE
+   ========================================================= */
+
+.rituals {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 80px;
+    row-gap: 20px;
+
+    align-items: start;
+}
+
+.ritual {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+    gap: 25px;
+
+    width: 100%;
+
+    margin: 30px 0;
+
+    min-width: 0;
 }
 
-.ritual{
-    flex: 0 0 45%;
-    width: 45%;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin: 40px auto;
-}
-
-.ritual-circle{
+.ritual-circle {
     flex: 0 0 20px;
+
     width: 20px;
     height: 20px;
+
     border: 2px solid #D9A578;
+
     border-radius: 50%;
-}
-.ritual-data>span{
-    color: #D9A578;
-    font-style: italic;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-.ritual-data>h3{
-    color: var(--night);
-    margin-bottom: 5px;
-    font-weight: 600;
-    font-style: italic;
-}
-.ritual-data>p{
-    color: var( --night-2);
-    margin-bottom: 5px;
+
+    box-sizing: border-box;
+
+    margin-top: 4px;
 }
 
-/*  Information Card  */
-.data-cards{
+.ritual-data {
+    min-width: 0;
+}
+
+.ritual-data > span {
+    display: block;
+
+    color: #D9A578;
+
+    font-style: italic;
+
+    margin-bottom: 5px;
+
+    font-weight: 600;
+
+    font-size: 15px;
+}
+
+.ritual-data > h3 {
+    color: var(--night);
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+
+    font-style: italic;
+
+    font-size: 21px;
+}
+
+.ritual-data > p {
+    color: var(--night-2);
+
+    margin-bottom: 5px;
+
+    font-size: 15px;
+
+    line-height: 24px;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+   ========================================================= */
+
+.data-cards {
     display: flex;
     flex-direction: row;
+
     justify-content: center;
-    align-items: center;
-    gap: 100px;
+    align-items: flex-start;
+
+    gap: 70px;
+
     flex-wrap: wrap;
+
+    width: 100%;
 }
-.data-card{
-    flex: 0 0 400px;
+
+.data-card {
+    flex: 1 1 300px;
+
     max-width: 400px;
+
+    min-width: 250px;
+
     text-align: justify;
+
+    box-sizing: border-box;
 }
-.data-card h3{
+
+.data-card h3 {
     color: var(--night);
+
     font-style: italic;
+
     font-size: 18px;
+
     margin-bottom: 15px;
 }
-.data-card p{
+
+.data-card p {
     color: var(--night-2);
+
     font-size: 14px;
+
+    line-height: 23px;
+
     margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    /* Image cards */
+
+    .image-card-container {
+        gap: 25px;
+    }
+
+    .image-card-container .card {
+        flex-basis: 400px;
+        max-width: 400px;
+    }
+
+    .image-card-container .card-image {
+        height: 280px;
+    }
+
+
+    /* Rituals */
+
+    .rituals {
+        column-gap: 50px;
+    }
+
+    .ritual {
+        gap: 20px;
+    }
+
+    .ritual-data > h3 {
+        font-size: 20px;
+    }
+
+    .ritual-data > p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+
+    /* Information */
+
+    .data-cards {
+        gap: 40px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* =====================================================
+       IMAGE CARDS
+       ===================================================== */
+
+    .image-card-container {
+        gap: 20px;
+    }
+
+    .image-card-container .card {
+        flex: 1 1 300px;
+        max-width: 45%;
+    }
+
+    .image-card-container .card-image {
+        height: 240px;
+    }
+
+
+    /* =====================================================
+       RITUALS
+       ===================================================== */
+
+    .rituals {
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+
+        row-gap: 0;
+    }
+
+    .ritual {
+        width: 100%;
+
+        max-width: 700px;
+
+        margin: 25px auto;
+
+        gap: 25px;
+    }
+
+    .ritual-data > h3 {
+        font-size: 21px;
+    }
+
+    .ritual-data > p {
+        font-size: 15px;
+
+        line-height: 24px;
+    }
+
+
+    /* =====================================================
+       INFORMATION CARDS
+       ===================================================== */
+
+    .data-cards {
+        gap: 30px;
+    }
+
+    .data-card {
+        flex: 1 1 300px;
+
+        max-width: 45%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================================
+       IMAGE CARDS
+       ===================================================== */
+
+    .image-card-container {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 30px;
+    }
+
+    .image-card-container .card {
+        flex: none;
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .image-card-container .card-image {
+        width: 100%;
+        height: 250px;
+
+        border-radius: 10px;
+    }
+
+    .image-card-container .card-image > img {
+        border-radius: 10px;
+    }
+
+    .image-card-container .card p {
+        font-size: 13px;
+
+        line-height: 20px;
+    }
+
+
+    /* =====================================================
+       RITUALS
+       ===================================================== */
+
+    .rituals {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .ritual {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 25px 0;
+
+        gap: 18px;
+
+        align-items: flex-start;
+    }
+
+    .ritual-circle {
+        flex: 0 0 18px;
+
+        width: 18px;
+        height: 18px;
+
+        margin-top: 4px;
+    }
+
+    .ritual-data {
+        flex: 1;
+
+        min-width: 0;
+    }
+
+    .ritual-data > span {
+        font-size: 14px;
+    }
+
+    .ritual-data > h3 {
+        font-size: 20px;
+
+        line-height: 26px;
+    }
+
+    .ritual-data > p {
+        font-size: 14px;
+
+        line-height: 23px;
+    }
+
+
+    /* =====================================================
+       INFORMATION CARDS
+       ===================================================== */
+
+    .data-cards {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 30px;
+    }
+
+    .data-card {
+        flex: none;
+
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        text-align: left;
+
+        padding-bottom: 25px;
+
+        border-bottom: 1px solid var(--line);
+    }
+
+    .data-card:last-child {
+        border-bottom: none;
+    }
+
+    .data-card h3 {
+        font-size: 19px;
+
+        margin-bottom: 10px;
+    }
+
+    .data-card p {
+        font-size: 14px;
+
+        line-height: 23px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    /* Image cards */
+
+    .image-card-container {
+        gap: 25px;
+    }
+
+    .image-card-container .card-image {
+        height: 220px;
+    }
+
+    .image-card-container .card p {
+        font-size: 12px;
+    }
+
+
+    /* Rituals */
+
+    .ritual {
+        gap: 14px;
+
+        margin: 22px 0;
+    }
+
+    .ritual-circle {
+        flex-basis: 16px;
+
+        width: 16px;
+        height: 16px;
+    }
+
+    .ritual-data > span {
+        font-size: 13px;
+    }
+
+    .ritual-data > h3 {
+        font-size: 18px;
+
+        line-height: 24px;
+    }
+
+    .ritual-data > p {
+        font-size: 13px;
+
+        line-height: 21px;
+    }
+
+
+    /* Information cards */
+
+    .data-card h3 {
+        font-size: 18px;
+    }
+
+    .data-card p {
+        font-size: 13px;
+
+        line-height: 21px;
+    }
 }

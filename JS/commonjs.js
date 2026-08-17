@@ -41,3 +41,79 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 });
+
+
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener("click", () => {
+
+        const isOpen = mainNav.classList.toggle("show");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        const icon = menuToggle.querySelector("i");
+
+        if (isOpen) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        } else {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+    });
+
+
+    /* Close menu when a link is clicked */
+
+    mainNav.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mainNav.classList.remove("show");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            const icon = menuToggle.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        });
+
+    });
+
+
+    /* Close menu when clicking outside */
+
+    document.addEventListener("click", (event) => {
+
+        if (
+            !mainNav.contains(event.target) &&
+            !menuToggle.contains(event.target)
+        ) {
+
+            mainNav.classList.remove("show");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            const icon = menuToggle.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+
+    });
+
+}
